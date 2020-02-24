@@ -1,2 +1,3 @@
-# ecommerce-react-native
-ecommerce-react-native
+# ecommerce app
+- npm install
+- react-native run-android (or run-ios)
