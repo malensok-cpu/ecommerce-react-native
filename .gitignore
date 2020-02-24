@@ -29,6 +29,7 @@ build/
 .gradle
 local.properties
 *.iml
+!debug.keystore
 
 # node.js
 #
@@ -55,9 +56,7 @@ buck-out/
 # Bundle artifact
 *.jsbundle
 
+jest_coverage
+
 # CocoaPods
 /ios/Pods/
-VoxImplantDemo.xcworkspace
-VoximplantDemo.xcworkspace
-
-android/app/google-services.json

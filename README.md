@@ -1,52 +1,84 @@
-# React Native Voximplant Demo Application
+# React Native Starter 🚀
 
-User agent demo application that uses `react-native-voximplant` and [Voximplant cloud platform](http://voximplant.com) for making/receiving audio/video calls.
+*You're viewing the new and updated version of React Native Starter, previous version can be found under the [v1 branch](https://github.com/flatlogic/react-native-starter/tree/v1)*
 
-## Before you start
-You will need free Voximplant developer account setup for making and receiving calls using the SDK. 
+A powerful react native starter template that bootstraps development of your mobile application. React Native Starter is a mobile application template with lots of built-in components like sidebar, navigation, form elements, etc - all you need to start building your mobile app faster. Check out live demo on [App Store](https://play.google.com/store/apps/details?id=com.reactnativestarter.lite), [Google Play](https://play.google.com/store/apps/details?id=com.reactnativestarter.app).
 
-Learn more at [quickstart](https://voximplant.com/docs/references/articles/quickstart).
+![React Native Starter](https://i.imgur.com/vcz4bU6.png)
 
-## Getting started
+<a href='https://play.google.com/store/apps/details?id=com.reactnativestarter.app'><img width="200" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+<a href='https://play.google.com/store/apps/details?id=com.reactnativestarter.app'><img width="200" alt='Download on App Store' src='https://i.imgur.com/7IxtMV0.png'/></a>
 
-1. Install React Native as described at [https://facebook.github.io/react-native/docs/getting-started.html#content](https://facebook.github.io/react-native/docs/getting-started.html#content)
-2. Clone this repository
-3. Run `npm install` , all required components will be installed automatically
+## What's inside
 
-    ### iOS
-      
-    1. Run `pod install` from `react-native-demo/ios` folder
-    2. Start XCode and open generated `VoximplantDemo.xcworkspace`
-    
-    Note: To enable ios push notifications in demo project, follow the [the instructions](http://voximplant.com/blog/push-notifications-for-ios/) to add certificates to the Voximplant Cloud
-    
-    ### Android
-    
-    no steps required
-        
-    Note: 
-    To enable andorid push notifications in demo preoject:
-    
-    1. Follow [the instructions](http://voximplant.com/blog/push-notifications-for-android/) to add the certificates to the Voximplant Cloud 
-    2. Add `google-services.json` file to android/app folder
-    3. Open `app/build.gradle` file and uncomment the `//apply plugin: 'com.google.gms.google-services'` line
+- Always up-to-date React Native scaffolding
+- UI/UX Design from industry experts
+- Modular and well-documented structure for application code
+- Redux for state management
+- React Navigation for simple navigation
+- Disk-persisted application state caching
+- More than 16 Ready-to-use Pages
 
-4. It is recommended to run `react-native start` command from root project directory.
-5. Run your project from XCode (`Cmd+R`) for iOS, or use `react-native run-android` to run your project on Android.
+## Getting Started
 
-## Demo project dependencies
+#### 1. Clone and Install
 
-The demo project uses the following third-party dependencies:
-- "react-native-vector-icons" - to implement icon buttons
-- "react-native-default-preference" - to store username and login tokens in default pregerences 
-- "react-native-fcm" - to support push notifications on android
-- "react-native-notifications" - to support push notifications on iOS
-- "react-native-md5" - to login with one time key
+```bash
+# Clone the repo
+git clone https://github.com/flatlogic/react-native-starter.git
 
-These are not the dependencies for our react native sdk, but only for demo project. 
-Please note that we use these dependencies just to simplify our demo project and to provide the ability to try full functionality of our sdk. Integration of these dependencies to the demo project does not mean that you have to use these dependencies in your project.
+# Navigate to clonned folder and Install dependencies
+cd react-native-starter && yarn install
 
-## Useful links
-Official guides:
-- [Using React Native SDK guide](https://voximplant.com/blog/using-react-native-sdk)
-- [Migration guide](https://voximplant.com/blog/migration-guide-for-react-native-sdk)
+# Install Pods
+cd ios && pod install
+```
+
+#### 2. Open RNS in your iOS simulator
+
+Run this command to start the development server and to start your app on iOS simulator:
+```
+yarn run:ios
+```
+
+Or, if you prefer Android:
+```
+yarn run:android
+```
+
+That's it! Cool, right?
+
+## Documentation
+
+Our handy documentation can be found on official RNS website: https://docs.reactnativestarter.com 
+
+## Contributing
+
+If you find any problems, please [open an issue](https://github.com/flatlogic/react-native-starter/issues/new) or submit a fix as a pull request.
+
+## Want more?
+
+We have a premium version of this mobile application template that saves you even more time and money and comes with advanced features:
+- Premium RED color scheme
+- More than 5 additional screens (such as chat, profile, product item, etc.)
+- Contains an extended charting library to visualize all the data you need
+- Premium support and updates included
+- Much, much more..
+
+Read more and purchase it at https://reactnativestarter.com
+
+## How can I support developers?
+- Star our GitHub repo :star:
+- [Tweet about it](https://twitter.com/intent/tweet?text=Amazing%20Mobile%20Application%20Template%20built%20with%20React%20Native!&url=https://github.com/flatlogic/react-native-starter&via=flatlogic).
+- Create pull requests, submit bugs, suggest new features or documentation updates :wrench:
+- Follow [@flatlogic on Twitter](https://twitter.com/flatlogic).
+- Subscribe to React Native Starter newsletter at [reactnativestarter.com](https://reactnativestarter.com/)
+- Like our page on [Facebook](https://www.facebook.com/flatlogic/) :thumbsup:
+
+## More from Flatlogic
+- [✔️Awesome Bootstrap Checkboxes & Radios](https://github.com/flatlogic/awesome-bootstrap-checkbox) - Pure css way to make inputs look prettier
+- [💥Sing App Dashboard](https://github.com/flatlogic/sing-app) - Free and open-source admin dashboard template built with Bootstrap 4 
+
+## License
+
+[Mozilla Public License 2.0](LICENSE)
