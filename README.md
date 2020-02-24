@@ -1,70 +1,52 @@
-# React Native Activity Feed Example
+# React Native Voximplant Demo Application
 
-A mobile application built using React Native, [Stream.io](https://getstream.io/) and [react-native-activity-feed](https://github.com/GetStream/react-native-activity-feed)
+User agent demo application that uses `react-native-voximplant` and [Voximplant cloud platform](http://voximplant.com) for making/receiving audio/video calls.
 
-![screenshots of example app](/images/screenshots@2x.png)
+## Before you start
+You will need free Voximplant developer account setup for making and receiving calls using the SDK. 
 
-## Features
+Learn more at [quickstart](https://voximplant.com/docs/references/articles/quickstart).
 
-- Flat feed
-- Notification feed
-- Activity detail screen
-- Profile screen
-- Profile update screen
-- Likes & Comments
-- Status update with hashtags, mentions, URL enrichment and image upload
+## Getting started
 
-## Requirements
+1. Install React Native as described at [https://facebook.github.io/react-native/docs/getting-started.html#content](https://facebook.github.io/react-native/docs/getting-started.html#content)
+2. Clone this repository
+3. Run `npm install` , all required components will be installed automatically
 
-- NodeJS
-- Expo
+    ### iOS
+      
+    1. Run `pod install` from `react-native-demo/ios` folder
+    2. Start XCode and open generated `VoximplantDemo.xcworkspace`
+    
+    Note: To enable ios push notifications in demo project, follow the [the instructions](http://voximplant.com/blog/push-notifications-for-ios/) to add certificates to the Voximplant Cloud
+    
+    ### Android
+    
+    no steps required
+        
+    Note: 
+    To enable andorid push notifications in demo preoject:
+    
+    1. Follow [the instructions](http://voximplant.com/blog/push-notifications-for-android/) to add the certificates to the Voximplant Cloud 
+    2. Add `google-services.json` file to android/app folder
+    3. Open `app/build.gradle` file and uncomment the `//apply plugin: 'com.google.gms.google-services'` line
 
-## Setup instructions
+4. It is recommended to run `react-native start` command from root project directory.
+5. Run your project from XCode (`Cmd+R`) for iOS, or use `react-native run-android` to run your project on Android.
 
-### 1. Install dependencies
+## Demo project dependencies
 
-```
-git clone https://github.com/GetStream/react-native-example
-cd react-native-example
-npm install
-```
+The demo project uses the following third-party dependencies:
+- "react-native-vector-icons" - to implement icon buttons
+- "react-native-default-preference" - to store username and login tokens in default pregerences 
+- "react-native-fcm" - to support push notifications on android
+- "react-native-notifications" - to support push notifications on iOS
+- "react-native-md5" - to login with one time key
 
-### 2. Setup up your app
+These are not the dependencies for our react native sdk, but only for demo project. 
+Please note that we use these dependencies just to simplify our demo project and to provide the ability to try full functionality of our sdk. Integration of these dependencies to the demo project does not mean that you have to use these dependencies in your project.
 
-Get your Stream API credentials from the [user dashboard](https://getstream.io/dashboard/) and make sure your application has these feed groups:
-
-- user (type Flat)
-- timeline (type Flat)
-- notification (type Notification)
-
-If you followed the [React Native tutorial](https://getstream.io/react-native-activity-feed/tutorial/), you already have a pre-configured app on your account that you can use for this project.
-
-```
-cp .env.example .env
-```
-
-Open the `.env` file in your favorite editor. And fill in the credentials.
-
-### 3. Get your userToken
-
-```
-npm run init-data
-```
-
-Copy the line this script outputs and put it in your `.env` file.
-
-### 4. Setup the demo data
-
-Now we need to run the previous command again and this time it will preload your app with the sample data.
-
-```
-npm run init-data
-```
-
-### 5. Start your app
-
-```
-npm start
-```
-
-Follow the instructions from the terminal to preview the app on your phone or using an emulator.
+## Useful links
+Official guides:
+- [Using React Native SDK guide](https://voximplant.com/blog/using-react-native-sdk)
+- [Migration guide](https://voximplant.com/blog/migration-guide-for-react-native-sdk)
